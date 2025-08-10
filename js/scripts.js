@@ -30,22 +30,12 @@ function renderTable() {
     td.setAttribute("data-label", "ট্রেড মূল্য (৳)");
     tr.appendChild(td);
 
-    // মূল্য (editable)
-    td = document.createElement("td");
-    td.setAttribute("data-label", "মূল্য (৳)");
-    const inputMullo = document.createElement("input");
-    inputMullo.type = "number";
-    inputMullo.min = 0;
-    inputMullo.step = "0.01";
-    inputMullo.value = data[i].mullo;
-    inputMullo.addEventListener("input", () => {
-      data[i].mullo = inputMullo.value;
-      updateRow(i);
-      saveData();
-      updateTotals();
-    });
-    td.appendChild(inputMullo);
-    tr.appendChild(td);
+// মূল্য (readonly text)
+td = document.createElement("td");
+td.setAttribute("data-label", "মূল্য (৳)");
+td.textContent = data[i].mullo;
+tr.appendChild(td);
+
 
     // মার্কেটে ইনপুট (empty string by default)
     td = document.createElement("td");
