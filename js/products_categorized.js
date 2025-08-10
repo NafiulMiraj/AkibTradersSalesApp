@@ -143,6 +143,4 @@ const products = [
     { name: "বেবি পাউডার ১১০", price: 85.0, category: "Powder" },
       { name: "ইন্টার পাউডার ২০০", price: 102.0, category: "Powder" },
         { name: "ইন্টার পাউডার ১০০", price: 56.0, category: "Powder" },
-  { name: "ফ্লাওয়ার ট্যালক ১০০", price: 49.0, category: "Other" },
-  { name: "ফ্লাওয়ার ট্যালক ২০০", price: 83.0, category: "Other" },
 ];
