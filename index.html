@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>প্রোডাক্ট বিক্রয় হিসাব</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Company Logo" class="logo" />
+    <h1>প্রোডাক্ট বিক্রয় হিসাব</h1>
+  </header>
+
+  <button id="downloadBtn">CSV ডাউনলোড</button>
+
+  <table id="productTable" aria-label="Product sales table">
+    <thead>
+      <tr>
+        <th>পণ্যের নাম</th>
+        <th>দাম (৳)</th>
+        <th>মার্কেটে</th>
+        <th>ফেরত</th>
+        <th>বিক্রি</th>
+        <th>মোট দাম (৳)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot>
+      <tr>
+        <th colspan="4" style="text-align:right;">মোট বিক্রি</th>
+        <th id="totalSold">0</th>
+        <th id="totalPrice">0.00</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <footer>
+    Created by Nafiul Alam Miraj
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
