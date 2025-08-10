@@ -118,3 +118,39 @@ footer {
     height: 40px;
   }
 }
+/* Category header row styling */
+.category-row {
+  background: #2d3748;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.category-row td {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Hover effect for category rows */
+.category-row:hover {
+  background: #4a5568;
+}
+
+/* Arrow indicator before category name */
+.category-row::before {
+  content: "▶ ";
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+/* Rotate arrow when expanded */
+.category-row.expanded::before {
+  transform: rotate(90deg);
+}
+
+/* Hide product rows by default */
+.hidden-row {
+  display: none;
+}
